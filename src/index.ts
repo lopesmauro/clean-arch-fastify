@@ -1,6 +1,6 @@
-import server from "./config/server"
+import {server} from "./config/server"
 
-server.listen({ port: 3000 }, (err, address) => {
+server.listen({ port: 3000, host: "0.0.0.0"}, (err, address) => {
   if(err){
     console.log(err)
     process.exit(1)
